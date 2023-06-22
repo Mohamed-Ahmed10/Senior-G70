@@ -1,0 +1,27 @@
+h3 {
+    color: aqua
+}
+
+p {
+    color: #080
+}
+
+.first_p {
+    color: #FF0
+}
+
+#first_id {
+    background-color: #1da1f2
+}
+
+/* 
+Name conventions : 
+1- snake case   => employee_email
+2- camel case   => employeeEmail
+3- kebab case   => employee-name
+4- pascal case  => EmployeeName
+*/
+
+.test {
+    color: #00F
+}

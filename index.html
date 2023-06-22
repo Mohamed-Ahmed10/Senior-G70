@@ -4,145 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML session</title>
+    <title>Session</title>
+
+    <style>
+        body {
+            height: 10000px;
+        }
+    </style>
 </head>
 
 <body>
+    <progress max="10" value="7"></progress>
+    <audio src="./audio/114.mp3" controls></audio>
 
-    <!-- 
+    <video src="./videos/count.mp4" width="400" controls autoplay muted></video>
+
+    <dl>
+        <dt>This is title</dt>
+        <dd>This is details</dd>
+    </dl>
+
     <button>OK</button>
 
-    <br>
-    <code>This is code</code>
-    <br>
-    <kbd>This is code</kbd>
-    <br>
-    <samp>This is code</samp>
-    <br>
-    <var>This is</var>
-    <br>
-    <pre>Mohamed             Hello              Ahmed</pre>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/P0uaLRO6V1U" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
-    <hr>
-    <a href="https://google.com" target="_blank">Click here</a>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6905.654769395515!2d31.333392277709965!3d30.070481999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e0dd2418453%3A0x48a86997f284f8d6!2sSenior%20Steps!5e0!3m2!1sen!2seg!4v1687162788987!5m2!1sen!2seg"
+        width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
-    <br>
-    Call now : <a href="tel:0123456">Call</a>
-    <br>
-    Sms : <a href="sms:0123456">sms</a>
-    <br>
-    Email : <a href="mailto:abc@senior.com">Email</a>
-    <br>
-    Whatsapp : <a href="http://wa.me/0123456">Whats</a>
-    
-    
-    <hr>
-    <article>This is article</article>
-    <aside>This is aside</aside>
-    <header>This is header</header>
-    <main>This is main</main>
-    <footer>This is footer</footer>
-    <section>This is section</section>
-    
-    <hr>
-    <details>
-        <summary>This is summary</summary>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore doloribus doloremque non vero earum nisi natus debitis in ullam architecto, molestiae delectus aperiam accusamus tenetur reiciendis praesentium quaerat consequatur cum.</p>
-    </details>
+    <div>Mohamed محمد <bdi>5555</bdi></div>
 
-    <figure>
-        <figcaption>This is figure caption</figcaption>
-        <img src="./images/nature.jpeg" width="200" alt="">
-    </figure>
-    
-    <ol>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-    </ol>
+    <meter max="100" value="30"></meter>
 
-    <ul>
-        <li>HTML
-            <ul>
-                <li>head
-                    <ul>
-                        <li>meta</li>
-                        <li>title</li>
-                    </ul>
-                </li>
-                <li>body</li>
-            </ul>
-        </li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-    </ul>
-    
--->
-    <form action="./thanks.html" method="post">
-        <label for="name">Name : </label>
-        <input type="text" name="username" autofocus autocomplete="off" placeholder="Please enter your name"> <br><br>
-        <input type="password" dirname="page_direction" required name="user_password" id=""> <br><br>
-        <select name="courses" id="" multiple> <br><br>
-            <optgroup label="Front">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-            </optgroup>
-            <optgroup label="back">
-                <option selected value="php">PHP</option>
-                <option value="sql">SQL</option>
-            </optgroup>
-        </select><br><br>
-        <textarea maxlength="20" cols="30" rows="10"></textarea>
-        <input type="date" name="reg" min="2023-06-19" max="2023-06-28" id=""><br><br>
-        <input type="number" name="" min="0" max="10" step="2" id="">
-        <!--         
-        
-        <input type="time" name="" id=""><br><br>
-        <input type="week" name="" id=""><br><br>
-        <input type="month" name="" id=""><br><br>
-        <input type="url" name="" id=""><br><br>
-        <input type="email" name="" id=""><br><br>
-        <input type="search" name="" id=""><br><br>
-        <input list="our_courses">
-        <datalist id="our_courses">
-            <option value="html"></option>
-            <option value="css"></option>
-            <option value="js"></option>
-        </datalist>
-
-    -->
-        <input type="file" multiple accept=".txt" name="" id=""><br><br>
-        <input type="hidden" name="language" value="En"><br><br>
-        <input type="image" src="./images/nature.jpeg" alt="This is submit" width="100">
-
-
-        <br><br>
-
-        <input type="radio" name="gender" checked id="male" value="male">
-        <label for="male">Male</label>
-        <br><br>
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="female">Female</label>
-        <br><br>
-
-        <input type="checkbox" name="courses" id="html" value="html">
-        <label for="html">HTML</label>
-        <br><br>
-        <input type="checkbox" name="courses" id="css" value="css">
-        <label for="css">CSS</label>
-        <br><br>
-
-
-
-        <br><br>
-        <input type="button" value="BTN">
-        <input type="reset" value="Reset now">
-        <input type="submit" formnovalidate formtarget="blank" value="OK">
-    </form>
-
-
+    <div>To &lt;p&gt; This is p &#174;
+        &#60;/p&#62;
+    </div>
 </body>
 
 </html>
