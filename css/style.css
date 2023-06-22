@@ -1,27 +1,47 @@
-h3 {
-    color: aqua
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html
+{
+    font-size: 10px;
 }
 
-p {
-    color: #080
+body {
+    height: 5000px;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 1.4rem;
 }
 
-.first_p {
-    color: #FF0
+/* ***************** Start Nav************************* */
+.test {
+    color: red !important
 }
 
-#first_id {
-    background-color: #1da1f2
-}
+.parent {
+    width: 90vw;
+    background-color: #9e9e9e;
+    height: 100vh;
+    font-weight: 600;
 
-/* 
-Name conventions : 
-1- snake case   => employee_email
-2- camel case   => employeeEmail
-3- kebab case   => employee-name
-4- pascal case  => EmployeeName
-*/
+
+    font-size: 2rem;
+}
 
 .test {
-    color: #00F
+    color: cadetblue;
+    /* Will not work*/
+    background-color: #0FF;
+    height: calc(50px * 4);
+    width: 50%;
+
+
+}
+
+nav {
+    background-color: #eee;
+    height: 70px;
+}
+
+header {
+    background-color: rgb(8, 228, 252);
+    height: calc(100vh - 70px);
 }
