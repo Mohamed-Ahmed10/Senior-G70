@@ -1,75 +1,24 @@
-:root {
-    --main_color: #F00;
-    font-size: 20px;
-}
-
-body {
-    height: 5000px;
-}
-
-* {
-    font-weight: bold;
-}
-
-.test,
-p {
-    color: var(--main_color)
-}
-
-
-span {
-    color: var(--main_color)
-}
-
-.bg-explain {
-    height: 500px;
-    background-color: #9e9e9e;
-    background-image: url(../images/nature.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-repeat: no-repeat;
-    background-position: center right; */
-}
-
-.gradient-explain {
+.corners {
     height: 200px;
     width: 200px;
-    /* background-image: linear-gradient(90deg, #F00, #00F); */
-    /* background-image: repeating-linear-gradient(#F00, #00F 25%); */
-    /* background-image: radial-gradient(#F00, #00F); */
-    /* background-image: repeating-radial-gradient(#F00, #00F 25%); */
-    background-image: conic-gradient(#F00, #00F);
-
+    background-color: #cecece;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-/*************************  Task ***************************/
-nav {
-    height: 70px;
-    background-image: linear-gradient(#a29bfe, #6c5ce7);
+.spaces {
+    height: 200px;
+    width: 200px;
+    background-color: #0F0;
+    /* margin-inline-start: 60px; */
+    padding: 20px;
 }
 
-.home {
+
+.parent .child {
+    font-weight: bold;
     color: red
-}
-
-.about {
-    color: green
-}
-
-.contact {
-    color: rgb(60, 255, 0)
-}
-
-header {
-    height: calc(100vh - 70px);
-    background-image: url(../images/nature.jpg);
-    background-size: cover
-}
-
-.border-explain {
-    /* border-color: red black blue green;
-    border-style: solid dotted groove outset;
-    border-width: 20px 2px; */
-
-    border: 10px solid #eee;
 }
