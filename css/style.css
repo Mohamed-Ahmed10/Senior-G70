@@ -1,24 +1,62 @@
-.corners {
-    height: 200px;
-    width: 200px;
-    background-color: #cecece;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+:root {
+    scroll-behavior: smooth;
 }
 
-.spaces {
-    height: 200px;
-    width: 200px;
-    background-color: #0F0;
-    /* margin-inline-start: 60px; */
-    padding: 20px;
+body {
+    height: 5000px;
 }
 
+.test {
+    height: 200px;
+    width: 200px;
+    background-color: #4e4e4e;
+    color: #FFF
+}
 
-.parent .child {
+.custom~.child {
+    color: red;
     font-weight: bold;
+    font-size: 20px;
+}
+
+
+.parent :nth-of-type(4) {
+    color: #00F;
+    font-size: 30px;
+}
+
+li::marker {
+    color: #FF0
+}
+
+section {
+    height: 450px;
+    background-color: #555;
+    margin-bottom: 20px;
+}
+
+section:target {
+    font-size: 50px;
+}
+
+p::first-letter {
+    color: aqua;
+    font-size: 40px;
+}
+
+p::first-line {
+    color: bisque;
+    font-size: 50px;
+}
+
+p::selection {
+    color: red;
+    background-color: #000;
+}
+
+p::after , 
+p::before {
+    content: "I am from CSS";
+    font-size: 25px;
     color: red
 }
