@@ -1,62 +1,159 @@
 :root {
-    scroll-behavior: smooth;
+    --color_one: #cecece;
+    --color_two: #989898;
+    --color_three: #6b6b6b;
+    --bg: #000
 }
 
 body {
     height: 5000px;
 }
 
+.floatParent>* {
+    float: left;
+    margin: 10px;
+}
+
+.floatParent::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+/********************** Eng global styles*************************/
 .test {
     height: 200px;
-    width: 200px;
-    background-color: #4e4e4e;
-    color: #FFF
+    background-color: #EEE;
+
+    /* visibility: hidden; */
+
+    /* display: none; */
 }
 
-.custom~.child {
-    color: red;
-    font-weight: bold;
+p span {
+    background-color: #F00;
+    color: #FFF;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 140px;
+}
+
+.list li {
+    background-color: #CCC;
+    margin: 10px;
+}
+
+.list li:first-child {
+    list-style-position: inside;
+}
+
+.list li:nth-child(2) {
+    list-style-image: url(../images/ok.png);
+}
+
+.list li:nth-last-child(2) {
+    list-style-type: armenian;
+    list-style: upper-roman;
+}
+
+table,
+th,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+.listTwo {
+    background-color: #FF0;
+}
+
+
+.parent {
+    background-color: var(--bg);
+}
+
+.parent>.child {
+    height: 150px;
+}
+
+.parent .child:first-child,
+.parent .child:nth-child(3) {
+    background-color: var(--color_one);
+}
+
+.parent .child:first-child,
+.parent .child:nth-child(2) {
+    width: 48%;
+}
+
+.parent .child:nth-child(2),
+.parent .child:nth-child(4) {
+    background-color: var(--color_two);
+}
+
+.parent .child:nth-child(3),
+.parent .child:nth-child(4),
+.parent .child:last-child {
+    width: 31%;
+}
+
+.parent .child:last-child {
+    background-color: var(--color_three);
+}
+
+.pos_rel {
+    height: 250px;
+    width: 250px;
+    background-color: #F00;
+    position: relative;
+    opacity: 45%;
+}
+
+.pos_abs {
+    height: 100px;
+    width: 100px;
+    color: #FFF;
     font-size: 20px;
+    position: absolute;
 }
 
+.one {
+    background-color: #4e4e4e;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
 
-.parent :nth-of-type(4) {
-    color: #00F;
+.two {
+    background-color: #39d125;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.three {
+    background-color: #f405e0;
+    bottom: 40px;
+    right: 40px;
+}
+
+.pos_stk {
+    position: sticky;
+    top: 0;
+    background-color: #313131;
+    color: #FFF;
     font-size: 30px;
 }
 
-li::marker {
-    color: #FF0
+.over {
+    height: 300px;
+    width: 300px;
+    background-color: #919191;
+    overflow: auto;
 }
 
-section {
-    height: 450px;
-    background-color: #555;
-    margin-bottom: 20px;
-}
-
-section:target {
-    font-size: 50px;
-}
-
-p::first-letter {
-    color: aqua;
-    font-size: 40px;
-}
-
-p::first-line {
-    color: bisque;
-    font-size: 50px;
-}
-
-p::selection {
-    color: red;
-    background-color: #000;
-}
-
-p::after , 
-p::before {
-    content: "I am from CSS";
-    font-size: 25px;
-    color: red
+input {
+    outline: none;
 }
