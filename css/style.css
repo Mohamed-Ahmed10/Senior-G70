@@ -1,159 +1,142 @@
+/*? ***********************************GLOBAL STYLES*********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
 :root {
-    --color_one: #cecece;
-    --color_two: #989898;
-    --color_three: #6b6b6b;
-    --bg: #000
+    --top_bg: #212934;
+    --top_font: #cfd6e1;
+    --white: #FFF;
+    --header_bg: #efefef;
+    --brand_color: #59ab6e;
+    --rating_color: #ede861;
+    --light_color: #ced0d2;
+    --footer_bg: #212934;
+    --last_footer_bg: #1d242d
 }
 
 body {
     height: 5000px;
 }
 
-.floatParent>* {
-    float: left;
-    margin: 10px;
+.container {
+    width: 70%;
+    margin: auto;
 }
 
-.floatParent::after {
+.float_parent>* {
+    float: left;
+}
+
+.float_parent::after {
     content: "";
     display: block;
-    clear: both
+    clear: both;
 }
 
-/********************** Eng global styles*************************/
-.test {
-    height: 200px;
-    background-color: #EEE;
-
-    /* visibility: hidden; */
-
-    /* display: none; */
+a {
+    text-decoration: none;
+    color: inherit
 }
 
-p span {
-    background-color: #F00;
-    color: #FFF;
-    height: 100px;
+
+/*? *********************************** END GLOBAL STYLES*********************************************************/
+
+/*? *********************************** START TOP STYLES*********************************************************/
+.top {
+    background-color: var(--top_bg);
+    color: var(--top_font);
+    padding: 10px 0;
+}
+
+.top .mail,
+.top .phone,
+.top .left {
+    float: left;
+}
+
+.top .mail,
+.top .phone {
+    margin: 0 5px;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.top .right {
+    float: right;
+}
+
+.top .right i {
+    margin: 3px;
+}
+
+/*? *********************************** END TOP STYLES*********************************************************/
+/*? ***********************************    START NAV STYLES*********************************************************/
+nav {
+    background-color: var(--white);
+}
+
+nav .left img {
     width: 100px;
-    padding: 20px;
-    margin: 140px;
 }
 
-.list li {
-    background-color: #CCC;
-    margin: 10px;
+nav .center {
+    width: 65%;
+    margin: 10px 35px;
 }
 
-.list li:first-child {
-    list-style-position: inside;
+nav .center ul li {
+    list-style: none;
+    margin-right: 50px;
+    margin-left: 30px;
 }
 
-.list li:nth-child(2) {
-    list-style-image: url(../images/ok.png);
+nav .center ul li a {
+    text-decoration: none;
+    color: var(--top_bg)
 }
 
-.list li:nth-last-child(2) {
-    list-style-type: armenian;
-    list-style: upper-roman;
+nav .right {
+    margin-top: 30px;
 }
 
-table,
-th,
-td {
-    border: 2px solid;
-    border-collapse: collapse;
-    caption-side: bottom;
-}
-
-.listTwo {
-    background-color: #FF0;
-}
-
-
-.parent {
-    background-color: var(--bg);
-}
-
-.parent>.child {
-    height: 150px;
-}
-
-.parent .child:first-child,
-.parent .child:nth-child(3) {
-    background-color: var(--color_one);
-}
-
-.parent .child:first-child,
-.parent .child:nth-child(2) {
-    width: 48%;
-}
-
-.parent .child:nth-child(2),
-.parent .child:nth-child(4) {
-    background-color: var(--color_two);
-}
-
-.parent .child:nth-child(3),
-.parent .child:nth-child(4),
-.parent .child:last-child {
-    width: 31%;
-}
-
-.parent .child:last-child {
-    background-color: var(--color_three);
-}
-
-.pos_rel {
-    height: 250px;
-    width: 250px;
-    background-color: #F00;
+nav .right i {
+    margin-left: 15px;
     position: relative;
-    opacity: 45%;
 }
 
-.pos_abs {
-    height: 100px;
-    width: 100px;
-    color: #FFF;
-    font-size: 20px;
+span.counter {
     position: absolute;
+    top: -11px;
+    right: -18px;
+    margin: 1px;
+    background: var(--light_color);
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    width: 23px;
+    text-align: center;
 }
 
-.one {
-    background-color: #4e4e4e;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
+/*? *********************************** END NAV STYLES*********************************************************/
+/*? *********************************** START HEADER STYLES*********************************************************/
+header {
+    background-color: var(--header_bg);
+    max-height: calc(100vh - 145px);
 }
 
-.two {
-    background-color: #39d125;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1;
+header .left,
+header .right {
+    width: 50%;
 }
 
-.three {
-    background-color: #f405e0;
-    bottom: 40px;
-    right: 40px;
+header .right img {
+    max-width: 100%;
 }
 
-.pos_stk {
-    position: sticky;
-    top: 0;
-    background-color: #313131;
-    color: #FFF;
-    font-size: 30px;
-}
-
-.over {
-    height: 300px;
-    width: 300px;
-    background-color: #919191;
-    overflow: auto;
-}
-
-input {
-    outline: none;
-}
+/*? *********************************** END HEADER STYLES*********************************************************/
