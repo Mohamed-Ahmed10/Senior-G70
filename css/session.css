@@ -1,0 +1,54 @@
+body {
+    height: 8000px;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_transform {
+    text-transform: uppercase;
+}
+
+.spacing {
+    text-indent: 20px;
+    line-height: 3;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+}
+
+table,
+tr,
+td,
+th {
+    border: solid;
+}
+
+th {
+    writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+}
+
+.transform {
+    height: 200px;
+    width: 200px;
+    background-color: #CCC;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+}
+
+.transform:hover {
+    transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    -moz-transform: skewY(45deg);
+    -ms-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+}

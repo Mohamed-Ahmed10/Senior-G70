@@ -43,6 +43,17 @@ a {
     color: inherit
 }
 
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.section_desc {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
 
 /*? *********************************** END GLOBAL STYLES*********************************************************/
 
@@ -127,7 +138,7 @@ span.counter {
 /*? *********************************** START HEADER STYLES*********************************************************/
 header {
     background-color: var(--header_bg);
-    max-height: calc(100vh - 145px);
+    min-height: calc(100vh - 145px);
 }
 
 header .left,
@@ -140,3 +151,43 @@ header .right img {
 }
 
 /*? *********************************** END HEADER STYLES*********************************************************/
+
+.category {
+    width: 33%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.category img {
+    max-width: 90%;
+    border-radius: 50%;
+    border: 1px solid #4e4e4e;
+}
+
+
+.products {
+    background-color: var(--light_color);
+    padding: 20px;
+}
+
+.products .product {
+    width: 30%;
+    margin-right: 2%;
+    background-color: #fff;
+}
+
+.product .product_details {
+    padding: 10px;
+}
+
+.products .product img {
+    max-width: 100%;
+}
+
+.active {
+    color: var(--rating_color)
+}
+
+.float_parent.price_and_rating :last-child {
+    float: right;
+}
