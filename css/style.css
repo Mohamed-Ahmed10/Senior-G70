@@ -1,3 +1,32 @@
 * {
     box-sizing: border-box
 }
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    width: 25%;
+    background-color: #F00;
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+}
+
+@media (min-width:500px) and (max-width:1000px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .child {
+        width: 50%;
+    }
+}
+
+@media (max-width:499px) {
+    .child {
+        width: 100%;
+    }
+}
