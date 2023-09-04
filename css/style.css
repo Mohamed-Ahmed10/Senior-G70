@@ -2,31 +2,17 @@
     box-sizing: border-box
 }
 
-.parent {
+nav {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.child {
-    width: 25%;
-    background-color: #F00;
+nav div {
     text-align: center;
-    font-size: 2em;
-    color: #FFF;
 }
 
-@media (min-width:500px) and (max-width:1000px) {
-    :root {
-        font-size: 12px;
-    }
-
-    .child {
-        width: 50%;
-    }
-}
-
-@media (max-width:499px) {
-    .child {
-        width: 100%;
+@media (max-width:700px) {
+    nav {
+        flex-direction: column;
     }
 }
