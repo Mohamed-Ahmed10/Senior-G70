@@ -1,16 +1,46 @@
-var persons = ["Ahmed", "Khaled", "no", "Omar", "Mahmoud"];
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict'
 
-// var indexOfNo = persons.indexOf("no");
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
 
-// persons.fill("Thanks", indexOfNo + 1)
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
 
-// console.log(persons)
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
 
 
-var indexOfNo;
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+    ].join('')
 
-for (let index = 0; index < persons.length; index++) {
-    const element = persons[index];
-    if (element === "no") { }
+    alertPlaceholder.append(wrapper)
 }
-console.log(indexOfNo)
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+    alertTrigger.addEventListener('click', () => {
+        appendAlert('Hellooooooooooooo', 'success')
+    })
+}
+
+var my_btn = document.getElementById("test");
+
+my_btn.onclick = function (e) {
+    console.log(e)
+}

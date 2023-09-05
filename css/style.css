@@ -2,17 +2,6 @@
     box-sizing: border-box
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav div {
-    text-align: center;
-}
-
-@media (max-width:700px) {
-    nav {
-        flex-direction: column;
-    }
+body {
+    height: 8000px;
 }
