@@ -25,193 +25,88 @@
 </head>
 
 <body>
-    <input type="text" class="form-control">
 
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-
-    <input type="file" name="" id="">
-    <input type="color" name="" id="">
-
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-            <label for="validationCustom01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-            <div class="valid-feedback">
-                Looks good!
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Username</label>
-            <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername"
-                    aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                    Please choose a username.
+    </nav>
+
+    <!-- <h2>about</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem maiores vitae vel laboriosam culpa perspiciatis rerum minima fugit quod voluptate qui omnis voluptas quo sed, dicta nobis, cum itaque.
+    Commodi doloribus voluptate deserunt quam aspernatur sit laborum rerum hic tempore similique nesciunt porro earum, dicta neque mollitia suscipit quod laudantium quos. Officiis, magnam porro! Culpa minima amet ex odio!
+    Quasi explicabo omnis odit alias libero consequuntur aut, mollitia quia in nemo accusamus animi saepe iste doloribus. Minus praesentium deleniti voluptatibus nesciunt, sit accusantium doloremque totam assumenda. Voluptatem, cum voluptate!
+    Pariatur rem nostrum quos laborum, ut nisi veniam blanditiis suscipit ex atque perferendis nihil ipsum quia, aliquid culpa, sed repellat a obcaecati molestiae! Tenetur doloribus, error quam est accusantium corrupti.
+    Illo dolorum debitis ipsa, temporibus consequatur porro blanditiis iusto, expedita minima consectetur excepturi beatae necessitatibus pariatur delectus laboriosam natus. Perspiciatis quis officia odio illo reprehenderit quasi, ut praesentium odit consequuntur!</p>
+
+    <h2>contacts</h2> -->
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo">Open modal for @mdo</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@fat">Open modal for @fat</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@senior">Open modal for @getbootstrap</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <label for="validationCustom03" class="form-label">City</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
-        </div>
-        <div class="col-md-3">
-            <label for="validationCustom04" class="form-label">State</label>
-            <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-            </select>
-            <div class="invalid-feedback">
-                Please select a valid state.
-            </div>
-        </div>
-        <div class="col-md-3">
-            <label for="validationCustom05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-                Please provide a valid zip.
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-    </form>
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                    <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
-                    being filled with some actual content.</div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the space to make it look, at least at first
-                    glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-        </div>
     </div>
-
-    <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
-    </div>
-    <div class="alert alert-secondary" role="alert">
-        A simple secondary alert—check it out!
-    </div>
-    <div class="alert alert-success" role="alert">
-        A simple success alert—check it out!
-    </div>
-    <div class="alert alert-danger" role="alert">
-        A simple danger alert—check it out!
-    </div>
-    <div class="alert alert-warning" role="alert">
-        A simple warning alert—check it out!
-    </div>
-    <div class="alert alert-info" role="alert">
-        A simple info alert—check it out!
-    </div>
-    <div class="alert alert-light" role="alert">
-        A simple light alert—check it out!
-    </div>
-    <div class="alert alert-dark" role="alert">
-        A simple dark alert—check it out!
-    </div>
-
-    <hr>
-
-
-    <div id="liveAlertPlaceholder"></div>
-    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
-
-
-    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
-
-    <button type="button" class="btn btn-primary">
-        Notifications <span class="badge text-bg-secondary">4</span>
-    </button>
-
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Left</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Right</button>
-    </div>
-
-    <div class="card border-success mb-3" style="max-width: 18rem;">
-        <div class="card-header bg-transparent border-success">Header</div>
-        <div class="card-body text-success">
-            <h5 class="card-title">Success card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-        </div>
-        <div class="card-footer bg-transparent border-success">Footer</div>
-    </div>
-
-
-
-    <button id="test" class="btn btn-primary">Button test for bla bla</button>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="js/session.js"></script>
