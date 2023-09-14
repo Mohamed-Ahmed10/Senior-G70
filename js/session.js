@@ -1,18 +1,26 @@
-const exampleModal = document.getElementById('exampleModal')
-if (exampleModal) {
-    exampleModal.addEventListener('show.bs.modal', event => {
-        // Button that triggered the modal
-        const button = event.relatedTarget
-        // Extract info from data-bs-* attributes
-        const recipient = button.getAttribute('data-bs-whatever')
-        // If necessary, you could initiate an Ajax request here
-        // and then do the updating in a callback.
+console.log(document.body)
+console.log(document.characterSet)
 
-        // Update the modal's content.
-        const modalTitle = exampleModal.querySelector('.modal-title')
-        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+var usernameDiv = document.getElementById("username")
 
-        modalTitle.textContent = `New message to ${recipient}`
-        modalBodyInput.value = recipient
-    })
-}
+console.log(usernameDiv)
+
+var usersDiv = document.getElementsByClassName("users")
+
+console.log(usersDiv)
+
+var contactInfoDiv = document.getElementsByName("contactInfo");
+
+console.log(contactInfoDiv)
+
+var divisionSelector = document.getElementsByTagName("div");
+
+console.log(divisionSelector)
+
+var selectOne = document.querySelector("#username");
+
+console.log(selectOne)
+
+var selectMore = document.querySelector("section .users");
+
+console.log(selectMore)

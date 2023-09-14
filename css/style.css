@@ -5,20 +5,3 @@
 body {
     height: 8000px;
 }
-
-h2 {
-    text-align: center;
-    margin: 50px;
-    text-transform: uppercase;
-    position: relative;
-}
-
-h2::after {
-    content: "";
-    position: absolute;
-    top: -38px;
-    left: 50%;
-    width: 2px;
-    height: 39px;
-    background-color: #080808;
-}
