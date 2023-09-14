@@ -25,26 +25,61 @@
 
 <body>
 
-    <div id="username">This is username</div>
+    <div id="username" data-custom="senior-steps">
+        <span>This is username</span>
+    </div>
 
 
-    <div class="users">USER</div>
-    <div class="users">USER</div>
-    <div class="users">USER</div>
-    
-    
-    <section>
-        <div class="users">USER 1</div>
-        <div class="users">USER 2</div>
-    </section>
+    <button onclick="set_custom_attr()">Add</button>
+
+    <hr>
+
+    <input type="text" id="usernameInput">
+
+    <button onclick="get_input_value()">Add</button>
+
+    <div id="output"></div>
 
 
+    <button onclick="create_elements_fn()">Create elements</button>
+    <div id="output2"></div>
 
-    <input type="text" name="contactInfo">
-    <input type="text" name="contactInfo">
-    <input type="text" name="contactInfo">
-    <input type="text" name="contactInfo">
 
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+
+
+    <form action="">
+        <!-- This is comment -->
+        This is text
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+    <form action=""></form>
+    <form action=""></form>
+    <form action=""></form>
+    <form action=""></form>
+
+    <!-------------------------------------------------------->
+
+    <hr><hr>
+    <form action="" id="myForm">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+    <button onclick="show_values()">Show values</button>
 
 
     <script src="js/session.js"></script>

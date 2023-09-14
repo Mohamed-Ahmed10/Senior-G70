@@ -5,3 +5,11 @@
 body {
     height: 8000px;
 }
+
+.test {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: #FFF;
+    background-color: #F00;
+}
