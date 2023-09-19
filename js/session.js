@@ -1,59 +1,89 @@
-var username_div = document.getElementById("username")
+var first = document.getElementById("first"),
+    parent = document.getElementById("parent");
 
-console.log(username_div.getAttribute("data-custom"))
 
 
-function set_custom_attr() {
-    username_div.setAttribute("fromJS", "This value from JS file")
+
+function addClass() {
+    // first.className = "fromJS"
+    // first.classList.add("fromJs")
+    // first.classList.remove("fromHTML")
+    // first.classList.toggle("fromJs")
+    // console.log(first.classList.contains("fromHTML"))
+    // console.log(first.classList.item(1))
+    parent.innerHTML += `
+        <div class="Ok">
+            This is from JS
+            <span>This is span from js</span>
+            <input type="password" name="educationPass"/>
+        </div>
+        `
 }
 
-console.log(username_div.innerHTML)
-console.log(username_div.outerHTML)
-console.log(username_div.textContent)
+
+console.log(parent.firstElementChild)
+console.log(parent.lastElementChild)
+console.log(parent.lastChild)
+
+var tagFromJS = document.createElement("span");
+
+tagFromJS.append("This is span from JS")
+
+parent.insertBefore(tagFromJS, parent.children[2])
+
+parent.removeChild(document.getElementsByClassName("test")[3])
+
+console.log(parent.children[2].nextElementSibling)
+console.log(parent.children[2].previousElementSibling)
 
 
-var username_input = document.querySelector("#usernameInput"),
-    output = document.getElementById("output")
+
+/////////////////////////////////////////////////////////////
+//  EVENTS
+var btn = document.querySelector("#btn")
+
+// btn.onclick = function () {
+//     console.log("Hello")
+// }
+
+// btn.onclick = function () {
+//     console.log("Hello 2")
+// }
 
 
 
-function get_input_value() {
-    // console.log(username_input)
-    // console.log(username_input.value)
-    output.innerHTML = username_input.value
-}
+// btn.addEventListener("click", function () {
+//     console.log("Hello from listener 2")
+// })
 
-var output2 = document.getElementById("output2");
 
-function create_elements_fn() {
-    var my_element = document.createElement("p"),
-        element_text = document.createTextNode("This is text"),
-        my_comment = document.createComment("This is comment"),
-        element_child = document.createElement("span");
 
-    my_element.appendChild(element_child)
-    my_element.append(element_text)
-    my_element.prepend(my_comment)
-    // my_element.style.background = "#F00"
-    my_element.className = "test"
+btn.addEventListener("click", function () {
+    console.log("Hello from listener")
+})
 
-    output2.appendChild(my_element)
-}
+window.onload = function () { console.log("Loaded") }
 
-var my_images = document.images,
-    my_forms = document.forms;
 
-console.log(my_images)
-console.log(my_forms[0].children)
-console.log(my_forms[0].childNodes)
 
-/////////////////////////////////////////////////////////
-var my_form = document.getElementById("myForm"),
-    results = []
-function show_values() {
-    for (let index = 0; index < my_form.children.length; index++) {
-        const element = my_form.children[index];
-        results.push(element.value)
-    }
-    console.log(results)
-}
+var myInput = document.getElementById("myInput"),
+    myOutput = document.querySelector("#output");
+
+myInput.addEventListener("blur", function (ev) {
+    // myOutput.innerHTML = ev.target.value
+    console.log("blur")
+})
+
+/**************************** To do list*******************************/
+
+var myForm = document.forms[0],
+    myTaskInput = myForm.children[0],
+    myOutput = document.getElementById("tasksOutput");
+
+
+myForm.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    myOutput.innerHTML += `<li>${myTaskInput.value}</li>`;
+    myTaskInput.value = "";
+    myTaskInput.focus();
+})

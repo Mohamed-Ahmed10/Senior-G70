@@ -20,67 +20,35 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap session </title>
+    <title>JS session </title>
 </head>
 
 <body>
+    <div class="fromHTML" id="first">This is from HTML</div>
 
-    <div id="username" data-custom="senior-steps">
-        <span>This is username</span>
+    <button onclick="addClass()">Click me</button>
+
+    <div id="parent">
+        <div class="test">One</div>
+        <div class="test">Two</div>
+        <div class="test">Three</div>
+        <div class="test">Four</div>
+        <div class="test">Five</div>
+        <!-- Comment -->
     </div>
 
-
-    <button onclick="set_custom_attr()">Add</button>
+    <button id="btn">Please click me</button>
 
     <hr>
-
-    <input type="text" id="usernameInput">
-
-    <button onclick="get_input_value()">Add</button>
-
+    <input type="text" id="myInput">
     <div id="output"></div>
 
-
-    <button onclick="create_elements_fn()">Create elements</button>
-    <div id="output2"></div>
-
-
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-
-
+    <hr>
     <form action="">
-        <!-- This is comment -->
-        This is text
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+        <input type="text" id="taskInput">
+        <input type="submit" value="Add new task">
     </form>
-    <form action=""></form>
-    <form action=""></form>
-    <form action=""></form>
-    <form action=""></form>
-
-    <!-------------------------------------------------------->
-
-    <hr><hr>
-    <form action="" id="myForm">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </form>
-    <button onclick="show_values()">Show values</button>
-
+    <ul id="tasksOutput"></ul>
 
     <script src="js/session.js"></script>
 </body>
