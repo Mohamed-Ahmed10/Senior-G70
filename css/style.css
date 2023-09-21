@@ -2,10 +2,12 @@
     box-sizing: border-box
 }
 
-.fromHTML {
-    font-weight: bold;
+.fa-flag-checkered,
+.fa-delete-left {
+    cursor: pointer;
 }
 
-.fromJs {
-    background-color: #4e4e;
+.finished {
+    background-color: rgb(13, 202, 240);
+    color: #FFF
 }

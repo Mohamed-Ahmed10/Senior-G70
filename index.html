@@ -18,39 +18,55 @@
     <meta name="theme-color" content="#59ab6e" />
     <link rel="icon" href="images/apple-icon.png">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>JS session </title>
 </head>
 
 <body>
-    <div class="fromHTML" id="first">This is from HTML</div>
-
-    <button onclick="addClass()">Click me</button>
-
-    <div id="parent">
-        <div class="test">One</div>
-        <div class="test">Two</div>
-        <div class="test">Three</div>
-        <div class="test">Four</div>
-        <div class="test">Five</div>
-        <!-- Comment -->
-    </div>
-
-    <button id="btn">Please click me</button>
-
-    <hr>
-    <input type="text" id="myInput">
-    <div id="output"></div>
-
-    <hr>
-    <form action="">
-        <input type="text" id="taskInput">
-        <input type="submit" value="Add new task">
+    <!-- <form action="" class="mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <input type="text" id="taskInput" class="form-control" autofocus>
+                </div>
+                <div class="col-3">
+                    <input type="submit" value="Add new task" class="btn btn-primary">
+                </div>
+                <div class="col-12 d-flex justify-content-around m-3 text-bg-secondary p-3 rounded-3 text-center fw-bold">
+                    <div class="finished_tasks">
+                        <h4>Finished tasks</h4>
+                        <span class="fs-5" id="finished_tasks_counter">0</span>
+                    </div>
+                    <div class="tasks">
+                        <h4>tasks</h4>
+                        <span class="fs-5" id="tasks_counter">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
-    <ul id="tasksOutput"></ul>
+    <ul class="list-group w-75 mx-auto mt-4" id="tasksOutput"></ul>
 
-    <script src="js/session.js"></script>
+    <script src="js/session.js"></script> -->
+
+    <!-- <script>
+        var personJs = {
+            name: "Sayed",
+            age: 50
+        }
+        var personJson = `{
+            "name": "Mohamed",
+            "age": 40
+        }`
+
+        console.log(JSON.stringify(personJs))
+        console.log(JSON.parse(personJson))
+    </script> -->
+
+    <ul id="output"></ul>
+    <script src="js/req.js"></script>
 </body>
 
 </html>
