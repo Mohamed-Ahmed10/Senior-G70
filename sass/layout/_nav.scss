@@ -1,0 +1,26 @@
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include rounded(5px)
+    }
+
+    >li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        color: rgb(84, 209, 82);
+
+        &:hover {
+            text-transform: uppercase;
+        }
+    }
+
+    @media (min-width:1000px) {
+        display: flex !important;        
+    }
+}

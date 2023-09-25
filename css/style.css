@@ -1,13 +1,7 @@
-* {
-    box-sizing: border-box
-}
+/* This is CSS comment */
+.gray {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
 
-.fa-flag-checkered,
-.fa-delete-left {
-    cursor: pointer;
-}
-
-.finished {
-    background-color: rgb(13, 202, 240);
-    color: #FFF
-}
+/*# sourceMappingURL=style.css.map */
